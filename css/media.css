@@ -88,25 +88,21 @@
     .wedo1 .container img, .wedo2 .container img {
         width: 100%;
     }
-    .wedo1 .container .right {
+    .wedo1 .container .right, .wedo2 .container .right {
         order: 1;
         max-width: 100%;
     }
-    .wedo1 .container .left {
+    .wedo1 .container .left, .wedo2 .container .left {
+        text-align: center;
         order: 2;
         max-width: 100%;
         margin-bottom: 30px;
     }
-    .wedo1 .container .btn {
+    .wedo1 .container .left h2, .wedo2 .container .left h2 {
+        border: none;
+        padding: 0;
+    }
+    .wedo1 .container .btn, .wedo2 .container .btn {
         margin-bottom: 20px;
-    }
-    .wedo2 .container .right {
-        order: 1;
-        max-width: 100%;
-    }
-    .wedo2 .container .left {
-        order: 2;
-        max-width: 100%;
-        margin-bottom: 30px;
     }
 }
