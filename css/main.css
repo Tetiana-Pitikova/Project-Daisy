@@ -33,25 +33,25 @@ body a.btn:hover {
 body .mainText {
   text-align: center;
 }
-body .mainText h1 {
+body .mainText h2 {
   text-transform: uppercase;
   font-size: 50px;
   color: #ffffff;
 }
-body .mainText h1 span {
+body .mainText h2 span {
   color: #fc635e;
 }
 body .mainText p {
   color: #ffffff;
   font-size: 22px;
 }
-body h1.main_header {
+body h2.main_header {
   text-decoration: none;
   margin: 0;
   text-transform: uppercase;
   font-size: 40px;
 }
-body h1.main_header span {
+body h2.main_header span {
   color: #fc635e;
 }
 body header {
@@ -113,7 +113,7 @@ body .recive p {
 body .icons {
   display: flex;
 }
-body .icons h3 {
+body .icons h4 {
   text-decoration: underline;
   text-transform: uppercase;
 }
@@ -132,7 +132,7 @@ body .expand .mainText {
   margin-bottom: 80px;
   border: 10px solid rgba(0, 0, 0, 0.2);
 }
-body .expand .mainText h1 {
+body .expand .mainText h2 {
   font-size: 55px;
   margin-bottom: 50px;
 }
@@ -144,11 +144,11 @@ body .our_process {
 body .our_process .steps {
   display: none;
 }
-body .our_process h1,
+body .our_process h2,
 body .our_process p {
   color: gray;
 }
-body .our_process h1 {
+body .our_process h2 {
   text-decoration: underline;
 }
 body .our_process p {
@@ -177,10 +177,10 @@ body .wedo2 .container {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-body .wedo1 h1,
-body .wedo2 h1,
 body .wedo1 h2,
 body .wedo2 h2,
+body .wedo1 h3,
+body .wedo2 h3,
 body .wedo1 p,
 body .wedo2 p {
   color: gray;
@@ -190,8 +190,8 @@ body .wedo2 p {
   font-size: 18px;
   padding-bottom: 15px;
 }
-body .wedo1 h2,
-body .wedo2 h2 {
+body .wedo1 h3,
+body .wedo2 h3 {
   text-transform: uppercase;
   border-left: 10px solid #fc635e;
   padding-left: 5px;
@@ -207,7 +207,7 @@ body .wedo2 .right {
 body .wedo2 {
   background: #ffffff;
 }
-body .wedo2 h2 {
+body .wedo2 h3 {
   border-left: none;
   border-right: 10px solid #fc635e;
   padding-right: 5px;
@@ -229,7 +229,7 @@ body .portfolio {
 body .portfolio .btn {
   margin: 40px 0px;
 }
-body .portfolio h1 {
+body .portfolio h2 {
   margin: 50px 0px;
   padding-bottom: 5px;
   border-bottom: 3px solid #b1b1b1;
@@ -332,19 +332,19 @@ body .our_team .warp a:hover {
 body .our_team .warp p {
   color: gray;
 }
-body .our_team .warp h3 {
+body .our_team .warp h4 {
   color: #414141;
   padding-bottom: 5px;
 }
-body .our_team .warp h3 span {
+body .our_team .warp h4 span {
   color: #fc635e;
 }
-body .our_team h1 {
+body .our_team h2 {
   text-decoration: underline;
   text-transform: uppercase;
   color: gray;
   padding-bottom: 5px;
 }
-body .our_team h1 span {
+body .our_team h2 span {
   color: #fc635e;
 }

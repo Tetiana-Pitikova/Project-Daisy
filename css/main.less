@@ -1,9 +1,16 @@
+@primary-color: #fc635e;
+@primary-color-dark: #e44640;
+@primary-color-rgba: rgba(255, 72, 72, 0.75);
+@gray-light: #868686;
+@gray-dark: #414141;
+@gray: gray;
+@white: white;
 body {
     a.arrowDown {
         font-size: 30px;
         text-decoration: none;
-        color: #fc635e;
-        border: 1px solid #fc635e;
+        color: @primary-color;
+        border: 1px solid @primary-color;
         display: flex;
         justify-content: center;
         margin: 0 auto;
@@ -11,30 +18,30 @@ body {
         width: 45px;
         height: 45px;
         &:hover {
-            background: #fc635e;
-            color: white;
+            background: @primary-color;
+            color: @white;
         }
     }
     a.btn {
-        color: #fc635e;
+        color: @primary-color;
         text-decoration: none;
         font-size: 22px;
-        border: 2px solid #fc635e;
+        border: 2px solid @primary-color;
         padding: 12px 28px;
         border-radius: 8px;
         &:hover {
-            background: #fc635e;
+            background: @primary-color;
             color: #ffffff;
         }
     }
     .mainText {
         text-align: center;
-        h1 {
+        h2 {
             text-transform: uppercase;
             font-size: 50px;
             color: #ffffff;
             span {
-                color: #fc635e;
+                color: @primary-color;
             }
         }
         p {
@@ -42,13 +49,13 @@ body {
             font-size: 22px;
         }
     }
-    h1.main_header {
+    h2.main_header {
         text-decoration: none;
         margin: 0;
         text-transform: uppercase;
         font-size: 40px;
         span {
-            color: #fc635e;
+            color: @primary-color;
         }
     }
     margin: 0 auto;
@@ -89,8 +96,8 @@ body {
                         font-size: 20px;
                         text-decoration: none;
                         &:hover {
-                            color: #fc635e;
-                            border-bottom: #fc635e solid 3px;
+                            color: @primary-color;
+                            border-bottom: @primary-color solid 3px;
                             padding-bottom: 5px;
                         }
                     }
@@ -101,9 +108,9 @@ body {
     .recive {
         margin-top: 0;
         text-align: center;
-        background: white;
+        background: @white;
         padding: 70px 50px 10px 50px;
-        color: #868686;
+        color: @gray-light;
         p {
             font-size: 22px;
             margin-bottom: 50px;
@@ -111,7 +118,7 @@ body {
     }
     .icons {
         display: flex;
-        h3 {
+        h4 {
             text-decoration: underline;
             text-transform: uppercase;
         }
@@ -129,7 +136,7 @@ body {
             padding: 50px;
             margin-bottom: 80px;
             border: 10px solid rgba(0, 0, 0, 0.2);
-            h1 {
+            h2 {
                 font-size: 55px;
                 margin-bottom: 50px;
             }
@@ -143,11 +150,11 @@ body {
         padding-top: 30px;
         padding-bottom: 15px;
 
-        h1,
+        h2,
         p {
-            color: gray;
+            color: @gray;
         }
-        h1 {
+        h2 {
             text-decoration: underline;
         }
         p {
@@ -177,18 +184,18 @@ body {
             padding-bottom: 50px;
         }
 
-        h1,
         h2,
+        h3,
         p {
-            color: gray;
+            color: @gray;
         }
         p {
             font-size: 18px;
             padding-bottom: 15px;
         }
-        h2 {
+        h3 {
             text-transform: uppercase;
-            border-left: 10px solid #fc635e;
+            border-left: 10px solid @primary-color;
             padding-left: 5px;
         }
         .left {
@@ -200,9 +207,9 @@ body {
     }
     .wedo2 {
         background: #ffffff;
-        h2 {
+        h3 {
             border-left: none;
-            border-right: 10px solid #fc635e;
+            border-right: 10px solid @primary-color;
             padding-right: 5px;
             padding-left: 0;
         }
@@ -222,28 +229,28 @@ body {
         .btn {
             margin: 40px 0px;
         }
-        h1 {
+        h2 {
             margin: 50px 0px;
             padding-bottom: 5px;
             border-bottom: 3px solid #b1b1b1;
-            color: gray;
+            color: @gray;
         }
         .controls {
             text-align: center;
             letter-spacing: 2px;
             font-size: 25px;
-            border-top: 3px gray solid;
-            border-bottom: 3px gray solid;
+            border-top: 3px @gray solid;
+            border-bottom: 3px @gray solid;
             padding: 15px;
             margin-bottom: 30px;
             button {
-                color: #fc635e;
+                color: @primary-color;
                 background: transparent;
                 border: none;
                 text-transform: uppercase;
                 font-size: 22px;
                 &:hover {
-                    color: #e44640;
+                    color: @primary-color-dark;
                     cursor: pointer;
                 }
             }
@@ -284,12 +291,12 @@ body {
                     }
                     font-size: 20px;
                     text-transform: uppercase;
-                    color: white;
+                    color: @white;
                     font-weight: bold;
                     display: none;
                     position: relative;
                     margin: 0;
-                    background: url(../img/portfolio/plus.png) rgba(255, 72, 72, 0.75);
+                    background: url(../img/portfolio/plus.png) @primary-color-rgba;
                     background-position: center;
                     background-repeat: no-repeat;
                 }
@@ -315,30 +322,30 @@ body {
                 margin-bottom: 15px;
             }
             a {
-                color: #414141;
+                color: @gray-dark;
                 font-size: 10px;
                 &:hover {
-                    color: #868686;
+                    color: @gray-light;
                 }
             }
             p {
-                color: gray;
+                color: @gray;
             }
-            h3 {
-                color: #414141;
+            h4 {
+                color: @gray-dark;
                 padding-bottom: 5px;
                 span {
-                    color: #fc635e;
+                    color: @primary-color;
                 }
             }
         }
-        h1 {
+        h2 {
             text-decoration: underline;
             text-transform: uppercase;
-            color: gray;
+            color: @gray;
             padding-bottom: 5px;
             span {
-                color: #fc635e;
+                color: @primary-color;
             }
 
         }
