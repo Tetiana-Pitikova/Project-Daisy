@@ -5,7 +5,37 @@
 @gray-dark: #414141;
 @gray: gray;
 @white: white;
+.h2 {
+    font-size: 50px;
+    color: @white;
+    &::before {
+        content: "";
+        background: transparent;
+    }
+}
 body {
+    h2{
+        font-size: 35px;
+        margin: 20px 0px;
+        text-decoration: uppercase;
+        color: @gray;
+        padding-bottom: 5px;
+        display: inline-block;
+        position: relative;
+        &::before {
+            display: block;
+            content: "";
+            height: 4px;
+            width: 100%;
+            background: @gray-light;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        span {
+            color: @primary-color;
+        }
+    }
     a.arrowDown {
         font-size: 30px;
         text-decoration: none;
@@ -31,36 +61,22 @@ body {
         border-radius: 8px;
         &:hover {
             background: @primary-color;
-            color: #ffffff;
+            color: @white;
         }
     }
     .mainText {
         text-align: center;
-        h2 {
-            text-transform: uppercase;
-            font-size: 50px;
-            color: #ffffff;
-            span {
-                color: @primary-color;
-            }
-        }
         p {
-            color: #ffffff;
+            color: @white;
             font-size: 22px;
-        }
-    }
-    h2.main_header {
-        text-decoration: none;
-        margin: 0;
-        text-transform: uppercase;
-        font-size: 40px;
-        span {
-            color: @primary-color;
         }
     }
     margin: 0 auto;
     max-width: 1260px;
     header {
+        h2 {
+            .h2;
+        }
         background: url(../img/background.png) no-repeat;
         display: flex;
         flex-direction: column;
@@ -130,16 +146,15 @@ body {
         }
     }
     .expand {
+        h2 {
+            .h2;
+        }
         padding: 100px 100px 15px 100px;
         background: url(../img/expand.png) no-repeat;
         .mainText {
             padding: 50px;
             margin-bottom: 80px;
-            border: 10px solid rgba(0, 0, 0, 0.2);
-            h2 {
-                font-size: 55px;
-                margin-bottom: 50px;
-            }
+            border: 15px solid rgba(0, 0, 0, 0.2);
         }
     }
     .our_process {
@@ -149,15 +164,8 @@ body {
         text-align: center;
         padding-top: 30px;
         padding-bottom: 15px;
-
-        h2,
         p {
             color: @gray;
-        }
-        h2 {
-            text-decoration: underline;
-        }
-        p {
             font-size: 18px;
         }
         .back_process {
@@ -169,7 +177,6 @@ body {
             background-repeat: no-repeat;
         }
     }
-
     .wedo1,
     .wedo2 {
         padding: 25px;
@@ -183,8 +190,6 @@ body {
             padding-top: 50px;
             padding-bottom: 50px;
         }
-
-        h2,
         h3,
         p {
             color: @gray;
@@ -228,12 +233,6 @@ body {
         padding-bottom: 30px;
         .btn {
             margin: 40px 0px;
-        }
-        h2 {
-            margin: 50px 0px;
-            padding-bottom: 5px;
-            border-bottom: 3px solid #b1b1b1;
-            color: @gray;
         }
         .controls {
             text-align: center;
@@ -308,7 +307,7 @@ body {
         }
     }
     .our_team {
-        display: flex;
+        // display: flex;
         flex-direction: column;
         text-align: center;
         background: #f2f2f2;
@@ -338,16 +337,6 @@ body {
                     color: @primary-color;
                 }
             }
-        }
-        h2 {
-            text-decoration: underline;
-            text-transform: uppercase;
-            color: @gray;
-            padding-bottom: 5px;
-            span {
-                color: @primary-color;
-            }
-
         }
     }
 }
